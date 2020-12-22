@@ -1,0 +1,68 @@
+=rwd($w)
+  @media only screen and (max-width: $w)
+    @content
+=rwd2($w:751px)
+  @media only screen and (min-width: $w)
+    @content
+=rwd3($h:900px)
+  @media only screen and (max-height: $h)
+    @content
+=rwd4($h:900px,$w:1100px)
+  @media only screen and (max-height: $h) and (max-width: $w)
+    @content
+=rwd5($h:900px,$w:900px)
+	@media only screen and (max-height: $h) and (max-width: $w)
+    @content
+
+=clearfix
+  &:after
+    content: ''
+    display: block
+    clear: both
+
+=dib
+  display: inline-block
+  vertical-align: middle
+
+=wrapperStyle
+  max-width: 980px
+  margin: auto
+  box-sizing: border-box
+  // +rwd(1680px)
+  //   width: 1200px
+  +rwd(1280px)
+    width: 920px
+  +rwd(960px)
+    width: 710px
+  +rwd(750px)
+    width: 500px
+  +rwd(540px)
+    width: 340px
+  +rwd(374px)
+    width: 280px
+
+=pst00($t:0,$b:0,$l:0,$r:0)
+  position: absolute
+  top: $t
+  bottom: $b
+  left: $l
+  right: $r
+  margin: auto
+
+=pst55
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600,700,900');
+
+*
+  font-family: 'Noto Sans TC','Noto Serif TC', sans-serif
+  // font-family: 'Noto Sans TC', sans-serif
+
+$bone: #ece4e2
+$pink: #fcd3d1
+$bubble: #fcdff3
+$tickle: #fe929f

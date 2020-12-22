@@ -1,0 +1,256 @@
+@import "var.sass"
+
+*
+	// outline: 1px solid #f00
+	vertical-align: middle
+
+img
+	width: 100%
+	vertical-align: middle
+html
+	font-size: 28px
+	+rwd(768px)
+		font-size: 18px
+
+.owl-dots
+	padding: 10px 0
+	text-align: center
+	.owl-dot
+		width: 15px
+		height: 15px
+		background-color: #fff !important
+		border: 1px solid $pink !important
+		border-radius: 50%
+		margin: 0 5px
+		&.active
+			background-color: $pink !important
+		&:focus
+			outline: none
+
+.pic
+	width: 100%
+	padding-bottom: 100%
+	margin-bottom: 1vw
+	background-image: url('https://fakeimg.pl/500x500/333/fff?text=pic1')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+
+header
+	padding: 5px
+	background-color: #0A0A0D
+	figure.logo
+		width: 200px
+		img
+	+rwd(768px)
+		figure.logo
+			width: 140px
+article
+	section.banner
+		width: 100%
+		.banner-pic
+			width: 100%
+			padding-bottom: 56.25%
+			background-image: url('../images/banner.jpg')
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center center
+	section.contact-part
+		background-color: $bone
+		.wrapper
+			width: 70vw
+			max-width: 980px
+			margin: auto
+			padding: 2vw 0
+			.icon
+				+dib
+				width: 33.333333%
+				font-size: 7vw
+				color: #999
+				text-align: center
+				cursor: pointer
+				text-decoration: none
+				transition: .3s
+				&:hover
+					color: $tickle
+		+rwd(768px)
+			.wrapper
+				padding: 4vw 0
+				.icon
+					font-size: 12vw
+	section.service
+		.wrapper
+			+wrapperStyle
+			padding: 2vw 0
+			.tab-bar
+				font-size: 0
+				.tab
+					width: 50%
+					padding: 2%
+					font-size: 1rem
+					border: 1px solid $pink
+					cursor: pointer
+					border-bottom: none
+					box-sizing: border-box
+					text-align: center
+					+dib
+					&.active
+						color: #fff
+						background-color: $pink
+						border: 1px solid $pink
+			.service-content
+				width: 100%
+				padding: 15px
+				box-sizing: border-box
+				// border: 1px solid #ccc
+				box-shadow: 1px 5px 5px #ccc
+				.service-box
+					display: none
+					width: 100%
+					// display: flex
+					.service-info
+						width: 380px
+						padding: 30px
+						border: 1px solid $pink
+						box-sizing: border-box
+						.title
+							font-size: 1.5rem
+							font-weight: bold
+							margin-bottom: 20px
+						.service-item
+							font-size: 1rem
+							padding: 5px 0
+							color: #000
+							text-decoration: none
+							display: block
+							transition: .3s
+							&:hover
+								color: $tickle
+					.service-pic
+						width: calc(100% - 380px)
+						padding-left: 15px
+						box-sizing: border-box
+				input
+					position: absolute
+					z-index: -100
+					opacity: 0
+					&:checked
+						& + .service-box
+							display: flex
+		+rwd(768px)
+			.wrapper
+				padding: 8vw 0
+				.tab-bar
+					.tab
+						// padding: 2%
+				.service-content
+					// padding: 15px
+					.service-box
+						.service-info
+							width: 100%
+							padding: 10px
+							.title
+								margin-bottom: 10px
+							.service-item
+						.service-pic
+							display: none
+	section.awarded
+		padding: 3vw 0
+		background-color: rgba($tickle,.3)
+		.wrapper
+			+wrapperStyle
+			.title
+				font-size: 1.5rem
+				margin: 2vw 0
+				font-weight: bold
+				text-align: center
+			.carousel-box
+				width: 100%
+				.pic
+		+rwd(768px)
+			padding: 6vw 0
+			.wrapper
+				.title
+					margin: 4vw 0
+				.carousel-box
+					.pic
+	section.introduce
+		padding: 2vw 0
+		background-color: $bone
+		.wrapper
+			+wrapperStyle
+			.intro-item
+				.card
+					width: 100%
+					// border: 1px solid $tickle
+					box-shadow: 1px 1px 20px rgba($tickle,.4)
+					background-color: #fff
+					padding: 15px
+					margin: 10px 0
+					box-sizing: border-box
+					font-size: 0
+				.title
+					font-size: 1.5rem
+					margin: 2vw 0
+					padding: 0.5vw 0
+					font-weight: bold
+					border-bottom: 3px solid $tickle
+					// display: inline-block
+				.sub-title
+					font-size: 1.2rem
+					padding-left: 0.1rem
+					margin: 0.5vw 0 1vw
+					display: inline-block
+					border-left: 3px solid #ca2521
+				.pic-box
+					width: 50%
+					display: inline-block
+					vertical-align: top
+					.pic
+				.content
+					width: 50%
+					padding: 10px
+					box-sizing: border-box
+					display: inline-block
+					vertical-align: top
+					.txt
+						font-size: 0.8rem
+						line-height: 1.5
+						span.bold
+							font-weight: 500
+						span.small
+							font-size: 0.5rem
+		+rwd(768px)
+			padding: 6vw 0
+			.wrapper
+				.intro-item
+					.card
+						width: 100%
+						padding: 10px
+						// margin: 10px 0
+					.title
+						margin: 4vw 0
+						padding: 1vw 0
+						border-bottom: 2px solid $tickle
+					.sub-title
+						border-left: 2px solid #ca2521
+					.pic-box
+						width: 100%
+						.pic
+							display: none
+							&:nth-child(1)
+								display: block
+					.content
+						width: 100%
+						padding: 10px 0
+						.txt
+							span.bold
+footer
+	background-color: #000
+	.wrapper
+		padding: 1vw 0
+		+wrapperStyle
+		font-size: 0.7rem
+		line-height: 1.5
+		text-align: center
+		color: #fff
