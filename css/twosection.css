@@ -5,6 +5,7 @@
 
 section.product .wrapper {
   width: 1200px;
+  padding-top: 120px;
   margin: auto; }
   section.product .wrapper .title {
     border-bottom: 1px solid #ccc;
