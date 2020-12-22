@@ -92,3 +92,126 @@ section.product .wrapper {
           text-align: right; }
           section.product .wrapper .product-box .product-item .info .price span.big {
             font-size: 34px; }
+
+section.faq {
+  background-color: #ded8c9; }
+  section.faq .wrapper {
+    width: 840px;
+    padding: 60px 0;
+    margin: auto; }
+    section.faq .wrapper .title {
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      z-index: 1; }
+      section.faq .wrapper .title .main-title {
+        position: relative;
+        display: inline-block; }
+        section.faq .wrapper .title .main-title:before {
+          content: '';
+          display: block;
+          width: 126px;
+          height: 101px;
+          background-image: url("../images/faq_title_en.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          position: absolute;
+          bottom: -15px;
+          right: -20%;
+          z-index: -1; }
+        section.faq .wrapper .title .main-title figure.icon {
+          width: 70px;
+          -webkit-transform: translateY(15px);
+          -ms-transform: translateY(15px);
+          transform: translateY(15px);
+          display: inline-block;
+          vertical-align: middle; }
+        section.faq .wrapper .title .main-title p {
+          font-size: 60px;
+          font-weight: bold;
+          display: inline-block;
+          vertical-align: middle; }
+    section.faq .wrapper .tab-box {
+      margin: 40px 0;
+      border-bottom: 1px solid #ccc;
+      font-size: 0;
+      text-align: center; }
+      section.faq .wrapper .tab-box .tab {
+        width: 190px;
+        margin: 0 1px;
+        font-size: 24px;
+        line-height: 50px;
+        font-weight: bold;
+        color: #a6a2a2;
+        background-color: #fff;
+        border: 1px solid #c5bfb2;
+        -webkit-box-shadow: 0 2px 8px rgba(6, 0, 1, 0.2) inset;
+        box-shadow: 0 2px 8px rgba(6, 0, 1, 0.2) inset;
+        border-radius: 10px 10px 0 0;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle; }
+        section.faq .wrapper .tab-box .tab.active {
+          color: #000;
+          background-color: #c5bfb2;
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+    section.faq .wrapper .faq-content {
+      width: 100%; }
+      section.faq .wrapper .faq-content .faq-box {
+        width: 100%; }
+        section.faq .wrapper .faq-content .faq-box .faq-item {
+          width: 100%;
+          margin: 10px 0; }
+          section.faq .wrapper .faq-content .faq-box .faq-item .faq-ques {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #c5bfb2;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer; }
+            section.faq .wrapper .faq-content .faq-box .faq-item .faq-ques:before {
+              content: '';
+              display: block;
+              width: 15px;
+              height: 100%;
+              background-color: #8f5b94;
+              position: absolute;
+              right: 0;
+              top: 0; }
+            section.faq .wrapper .faq-content .faq-box .faq-item .faq-ques figure.icon {
+              width: 43px;
+              display: inline-block;
+              vertical-align: middle; }
+            section.faq .wrapper .faq-content .faq-box .faq-item .faq-ques p {
+              font-size: 24px;
+              font-weight: bold;
+              display: inline-block;
+              vertical-align: middle; }
+          section.faq .wrapper .faq-content .faq-box .faq-item .faq-ans {
+            width: 100%;
+            padding: 15px 45px;
+            border: 2px solid #c5bfb2;
+            background-color: #fff;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+            section.faq .wrapper .faq-content .faq-box .faq-item .faq-ans p {
+              font-size: 22px;
+              line-height: 1.5;
+              color: #444; }
+    section.faq .wrapper a.more-btn {
+      width: 450px;
+      margin: 40px auto 0;
+      font-size: 24px;
+      line-height: 78px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #c5bfb2;
+      text-align: center;
+      display: block; }

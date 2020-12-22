@@ -84,3 +84,117 @@ section.product
 						text-align: right
 						span.big
 							font-size: 34px
+
+
+
+section.faq
+	background-color: $lightyellow
+	.wrapper
+		width: 840px
+		padding: 60px 0
+		margin: auto
+		.title
+			padding: 20px 0
+			text-align: center
+			position: relative
+			z-index: 1
+			.main-title
+				position: relative
+				display: inline-block
+				&:before
+					content: ''
+					display: block
+					width: 126px
+					height: 101px
+					background-image: url('../images/faq_title_en.png')
+					background-repeat: no-repeat
+					background-position: center center
+					background-size: contain
+					position: absolute
+					bottom: -15px
+					right: -20%
+					z-index: -1
+				figure.icon
+					width: 70px
+					transform: translateY(15px)
+					+dib
+				p
+					font-size: 60px
+					font-weight: bold
+					+dib
+		.tab-box
+			margin: 40px 0
+			border-bottom: 1px solid #ccc
+			font-size: 0
+			text-align: center
+			.tab
+				width: 190px
+				margin: 0 1px
+				font-size: 24px
+				line-height: 50px
+				font-weight: bold
+				color: #a6a2a2
+				background-color: #fff
+				border: 1px solid $brown
+				box-shadow: 0 2px 8px rgba(#060001,.2) inset
+				border-radius: 10px 10px 0 0
+				cursor: pointer
+				+dib
+				&.active
+					color: #000
+					background-color: $brown
+					box-shadow: none
+		.faq-content
+			width: 100%
+			.faq-box
+				width: 100%
+				.faq-item
+					width: 100%
+					margin: 10px 0
+					.faq-ques
+						width: 100%
+						padding: 10px 20px
+						background-color: $brown
+						box-sizing: border-box
+						border-radius: 10px
+						overflow: hidden
+						position: relative
+						cursor: pointer
+						&:before
+							content: ''
+							display: block
+							width: 15px
+							height: 100%
+							background-color: $purple
+							position: absolute
+							right: 0
+							top: 0
+						figure.icon
+							width: 43px
+							+dib
+						p
+							font-size: 24px
+							font-weight: bold
+							+dib
+					.faq-ans
+						width: 100%
+						padding: 15px 45px
+						border: 2px solid $brown
+						background-color: #fff
+						box-sizing: border-box
+						p
+							font-size: 22px
+							line-height: 1.5
+							color: #444
+		a.more-btn
+			width: 450px
+			margin: 40px auto 0
+			font-size: 24px
+			line-height: 78px
+			font-weight: bold
+			text-decoration: none
+			color: #000
+			background-color: #fff
+			border: 1px solid $brown
+			text-align: center
+			display: block
