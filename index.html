@@ -18,25 +18,11 @@
     <header class="header">
       <div class="header-logo"><img src="./images/logo.jpg" alt="logo"/></div>
       <div class="header-nav">
-        <div class="menu">
-          <div class="menu-item"><img src="./images/btn-1.png" alt="關於六股"/></div>
-          <div class="menu-item"><img src="./images/btn-2.png" alt="社區新聞"/></div>
-          <div class="menu-item"><img src="./images/btn-3.png" alt="熱門商品"/></div>
-          <div class="menu-item"><img src="./images/btn-4.png" alt="常見問題"/></div>
-          <div class="menu-item"><img src="./images/btn-5.png" alt="聯繫我們"/></div>
-          <div class="menu-item"><img src="./images/btn-6.png" alt="首頁"/></div>
-        </div>
-        <div class="info">
-          <div class="info-item"><img src="./images/food.png" alt="食"/>
-            <p>食</p>
-          </div>
-          <div class="info-item"><img src="./images/book.png" alt="育"/>
-            <p>育</p>
-          </div>
-          <div class="info-item"><img src="./images/toy.png" alt="樂"/>
-            <p>樂</p>
-          </div>
-        </div>
+        <div class="menu"><a class="menu-item" href="#"><img src="./images/btn-1.png" alt="關於六股"/></a><a class="menu-item" href="#"><img src="./images/btn-2.png" alt="社區新聞"/></a><a class="menu-item" href="#"><img src="./images/btn-3.png" alt="熱門商品"/></a><a class="menu-item" href="#"><img src="./images/btn-4.png" alt="常見問題"/></a><a class="menu-item" href="#"><img src="./images/btn-5.png" alt="聯繫我們"/></a><a class="menu-item" href="#"><img src="./images/btn-6.png" alt="首頁"/></a></div>
+        <div class="info"><a class="info-item" href="#"><img src="./images/food.png" alt="食"/>
+            <p>食</p></a><a class="info-item" href="#"><img src="./images/book.png" alt="育"/>
+            <p>育</p></a><a class="info-item" href="#"><img src="./images/toy.png" alt="樂"/>
+            <p>樂</p></a></div>
         <div class="other">
           <div class="other-top">想進一步了解社區更多有趣資訊<br/>可點選左邊按鈕了解更多，也可下方搜尋商品資訊！</div>
           <div class="other-bottom">
@@ -52,6 +38,42 @@
         </div>
       </div>
     </header>
+    <section class="banner">
+      <div class="carousel-arrow arrow-left" id="banner-left">
+        <div class="svg-box">
+          <svg x="0px" y="0px" viewBox="0 0 80 80">
+            <g>
+              <circle class="st0" cx="40" cy="40" r="40"></circle>
+              <path class="st1" d="M58.37,43.29l-23.54,23.5c-0.89,0.89-1.97,1.34-3.25,1.34c-1.28,0-2.36-0.45-3.25-1.34l-2.74-2.71    c-0.89-0.94-1.34-2.03-1.34-3.29c0-1.28,0.45-2.36,1.34-3.25L43.13,40L25.58,22.49c-0.89-0.94-1.34-2.03-1.34-3.29    c0-1.28,0.45-2.36,1.34-3.25l2.74-2.71c0.87-0.91,1.95-1.37,3.25-1.37s2.38,0.46,3.25,1.37l23.54,23.51    c0.89,0.89,1.34,1.97,1.34,3.25C59.71,41.25,59.26,42.35,58.37,43.29z"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="carousel-arrow arrow-right" id="banner-right">
+        <div class="svg-box">
+          <svg x="0px" y="0px" viewBox="0 0 80 80">
+            <g>
+              <circle class="st0" cx="40" cy="40" r="40"></circle>
+              <path class="st1" d="M58.37,43.29l-23.54,23.5c-0.89,0.89-1.97,1.34-3.25,1.34c-1.28,0-2.36-0.45-3.25-1.34l-2.74-2.71    c-0.89-0.94-1.34-2.03-1.34-3.29c0-1.28,0.45-2.36,1.34-3.25L43.13,40L25.58,22.49c-0.89-0.94-1.34-2.03-1.34-3.29    c0-1.28,0.45-2.36,1.34-3.25l2.74-2.71c0.87-0.91,1.95-1.37,3.25-1.37s2.38,0.46,3.25,1.37l23.54,23.51    c0.89,0.89,1.34,1.97,1.34,3.25C59.71,41.25,59.26,42.35,58.37,43.29z"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="owl-carousel" id="banner-carousel">
+        <div class="banner-item">
+          <figure class="pic"><img src="./images/banner01.jpg"/></figure>
+        </div>
+        <div class="banner-item">
+          <figure class="pic"><img src="./images/banner01.jpg"/></figure>
+        </div>
+        <div class="banner-item">
+          <figure class="pic"><img src="./images/banner01.jpg"/></figure>
+        </div>
+        <div class="banner-item">
+          <figure class="pic"><img src="./images/banner01.jpg"/></figure>
+        </div>
+      </div>
+    </section>
     <section class="aboutUs">
       <div class="wrapper">
         <div class="about">
@@ -62,9 +84,72 @@
               <div class="title">關於霧峰六股</div>
               <p class="about-text">霧峰六股社區位於乾溪之南,早年為合資開墾之地, 舉首將土地按人口數目、出力多寡,劃分持股數目,而社區位於「第六股」,即形成聚落而得名。早期社區居民以種植稻米為主,2007年引進紫錐花栽培,和中興大學、弘光科技大學兩所大學產學合作, 研究紫錐花,成為社區最重要的微型經濟作物,研發 出紫錐花茶包、方塊酥、手工皂、精油等11項產品。</p>
             </div>
+          </div><a class="btn" href="#">了解更多‧Read MORE ></a>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="wrapper">
+        <div class="title">
+          <figure class="icon"><img src="./images/news_title_icon.png"/></figure>
+          <p>社區新聞</p>
+        </div>
+        <div class="news-box">
+          <div class="carousel-arrow arrow-left" id="news-left">
+            <div class="svg-box">
+              <svg x="0px" y="0px" viewBox="0 0 80 80">
+                <g>
+                  <circle class="st0" cx="40" cy="40" r="40"></circle>
+                  <path class="st1" d="M58.37,43.29l-23.54,23.5c-0.89,0.89-1.97,1.34-3.25,1.34c-1.28,0-2.36-0.45-3.25-1.34l-2.74-2.71    c-0.89-0.94-1.34-2.03-1.34-3.29c0-1.28,0.45-2.36,1.34-3.25L43.13,40L25.58,22.49c-0.89-0.94-1.34-2.03-1.34-3.29    c0-1.28,0.45-2.36,1.34-3.25l2.74-2.71c0.87-0.91,1.95-1.37,3.25-1.37s2.38,0.46,3.25,1.37l23.54,23.51    c0.89,0.89,1.34,1.97,1.34,3.25C59.71,41.25,59.26,42.35,58.37,43.29z"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="carousel-arrow arrow-right" id="news-right">
+            <div class="svg-box">
+              <svg x="0px" y="0px" viewBox="0 0 80 80">
+                <g>
+                  <circle class="st0" cx="40" cy="40" r="40"></circle>
+                  <path class="st1" d="M58.37,43.29l-23.54,23.5c-0.89,0.89-1.97,1.34-3.25,1.34c-1.28,0-2.36-0.45-3.25-1.34l-2.74-2.71    c-0.89-0.94-1.34-2.03-1.34-3.29c0-1.28,0.45-2.36,1.34-3.25L43.13,40L25.58,22.49c-0.89-0.94-1.34-2.03-1.34-3.29    c0-1.28,0.45-2.36,1.34-3.25l2.74-2.71c0.87-0.91,1.95-1.37,3.25-1.37s2.38,0.46,3.25,1.37l23.54,23.51    c0.89,0.89,1.34,1.97,1.34,3.25C59.71,41.25,59.26,42.35,58.37,43.29z"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="owl-carousel" id="news-carousel">
+            <div class="news-item">
+              <figure class="pic"><img src="./images/news01.jpg"/></figure>
+              <div class="info">
+                <div class="date">2020/11/08</div>
+                <div class="txt">社區咖啡開外掛，木作科學玩具加進來，鄉土教具同步研發中，原來社區咖啡....</div>
+                <div class="more"><a href="#">Read More　→</a></div>
+              </div>
+            </div>
+            <div class="news-item">
+              <figure class="pic"><img src="./images/news02.jpg"/></figure>
+              <div class="info">
+                <div class="date">2020/11/05</div>
+                <div class="txt">第一棒 伸興工業伸出愛興志工隊，從創意發想、縫紉技術教學、縫紉機提供....</div>
+                <div class="more"><a href="#">Read More　→</a></div>
+              </div>
+            </div>
+            <div class="news-item">
+              <figure class="pic"><img src="./images/news03.jpg"/></figure>
+              <div class="info">
+                <div class="date">2020/11/04</div>
+                <div class="txt">不斷反覆的練習每位長者個個都是「太鼓、高手」說不定之後能組個#不老太鼓隊...</div>
+                <div class="more"><a href="#">Read More　→</a></div>
+              </div>
+            </div>
+            <div class="news-item">
+              <figure class="pic"><img src="./images/news01.jpg"/></figure>
+              <div class="info">
+                <div class="date">2020/11/08</div>
+                <div class="txt">社區咖啡開外掛，木作科學玩具加進來，鄉土教具同步研發中，原來社區咖啡....</div>
+                <div class="more"><a href="#">Read More　→</a></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="btn">了解更多‧Read MORE ></div>
       </div>
     </section>
     <section class="product">
@@ -317,6 +402,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/libs/owl.carousel.min.js"></script>
+    <script src="./js/onesection.js"></script>
     <script src="./js/twosection.js"></script>
   </body>
 </html>

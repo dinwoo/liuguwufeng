@@ -1,14 +1,80 @@
+section.banner
+	.carousel-arrow.arrow-left#banner-left
+		.svg-box
+			include ../includes/arrow_svg.pug
+	.carousel-arrow.arrow-right#banner-right
+		.svg-box
+			include ../includes/arrow_svg.pug
+	#banner-carousel.owl-carousel
+		.banner-item
+			figure.pic
+				img(src="./images/banner01.jpg")
+		.banner-item
+			figure.pic
+				img(src="./images/banner01.jpg")
+		.banner-item
+			figure.pic
+				img(src="./images/banner01.jpg")
+		.banner-item
+			figure.pic
+				img(src="./images/banner01.jpg")
 section.aboutUs
-  .wrapper
-    .about
-      .about-bg
-      .about-main
-        .about-img
-          img(src='./images/aboutUs-img.jpg' alt='紫錐花故鄉')
-        .about-content
-          .title
-            | 關於霧峰六股
-          p.about-text
-            | 霧峰六股社區位於乾溪之南,早年為合資開墾之地, 舉首將土地按人口數目、出力多寡,劃分持股數目,而社區位於「第六股」,即形成聚落而得名。早期社區居民以種植稻米為主,2007年引進紫錐花栽培,和中興大學、弘光科技大學兩所大學產學合作, 研究紫錐花,成為社區最重要的微型經濟作物,研發 出紫錐花茶包、方塊酥、手工皂、精油等11項產品。
-    .btn
-      | 了解更多‧Read MORE >
+	.wrapper
+		.about
+			.about-bg
+			.about-main
+				.about-img
+					img(src='./images/aboutUs-img.jpg' alt='紫錐花故鄉')
+				.about-content
+					.title
+						| 關於霧峰六股
+					p.about-text
+						| 霧峰六股社區位於乾溪之南,早年為合資開墾之地, 舉首將土地按人口數目、出力多寡,劃分持股數目,而社區位於「第六股」,即形成聚落而得名。早期社區居民以種植稻米為主,2007年引進紫錐花栽培,和中興大學、弘光科技大學兩所大學產學合作, 研究紫錐花,成為社區最重要的微型經濟作物,研發 出紫錐花茶包、方塊酥、手工皂、精油等11項產品。
+			a.btn(href="#")
+				| 了解更多‧Read MORE >
+section.news
+	.wrapper
+		.title
+			figure.icon
+				img(src="./images/news_title_icon.png")
+			p 社區新聞
+		.news-box
+			.carousel-arrow.arrow-left#news-left
+				.svg-box
+					include ../includes/arrow_svg.pug
+			.carousel-arrow.arrow-right#news-right
+				.svg-box
+					include ../includes/arrow_svg.pug
+			#news-carousel.owl-carousel
+				.news-item
+					figure.pic
+						img(src="./images/news01.jpg")
+					.info
+						.date 2020/11/08
+						.txt 社區咖啡開外掛，木作科學玩具加進來，鄉土教具同步研發中，原來社區咖啡....
+						.more
+							a(href="#") Read More　→
+				.news-item
+					figure.pic
+						img(src="./images/news02.jpg")
+					.info
+						.date 2020/11/05
+						.txt 第一棒 伸興工業伸出愛興志工隊，從創意發想、縫紉技術教學、縫紉機提供....
+						.more
+							a(href="#") Read More　→
+				.news-item
+					figure.pic
+						img(src="./images/news03.jpg")
+					.info
+						.date 2020/11/04
+						.txt 不斷反覆的練習每位長者個個都是「太鼓、高手」說不定之後能組個#不老太鼓隊...
+						.more
+							a(href="#") Read More　→
+				.news-item
+					figure.pic
+						img(src="./images/news01.jpg")
+					.info
+						.date 2020/11/08
+						.txt 社區咖啡開外掛，木作科學玩具加進來，鄉土教具同步研發中，原來社區咖啡....
+						.more
+							a(href="#") Read More　→

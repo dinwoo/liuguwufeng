@@ -63,6 +63,8 @@
   padding: 5px 20px;
   font-size: 18px;
   text-align: center;
+  text-decoration: none;
+  color: #000;
   border-left: 1px solid #888;
 }
 .header .info-item:last-of-type {
