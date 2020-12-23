@@ -45,8 +45,18 @@ section.product
 					line-height: 1.5
 					color: $purple
 		.product-box
-			width: 100%
+			width: calc(100% - 80px)
+			margin: auto
 			padding: 35px 0
+			position: relative
+			.carousel-arrow
+				width: 30px
+				height: 30px
+				.svg-box
+				&.arrow-left
+					left: -40px
+				&.arrow-right
+					right: -40px
 			.product-item
 				width: 100%
 				.pic
@@ -149,6 +159,9 @@ section.faq
 			width: 100%
 			.faq-box
 				width: 100%
+				display: none
+				&:nth-child(1)
+					display: block
 				.faq-item
 					width: 100%
 					margin: 10px 0
@@ -183,6 +196,7 @@ section.faq
 						border: 2px solid $brown
 						background-color: #fff
 						box-sizing: border-box
+						display: none
 						p
 							font-size: 22px
 							line-height: 1.5
@@ -199,3 +213,174 @@ section.faq
 			border: 1px solid $brown
 			text-align: center
 			display: block
+
+
+section.contact
+	.wrapper
+		width: 1200px
+		padding-top: 100px
+		margin: auto
+		.title
+			border-bottom: 1px solid #ccc
+			display: flex
+			justify-content: center
+			align-items: center
+			.main-title
+				width: 540px
+				position: relative
+				text-align: right
+				&:before
+					content: ''
+					display: block
+					width: 374px
+					height: 89px
+					background-image: url('../images/contact_title_en.png')
+					background-repeat: no-repeat
+					background-position: center center
+					background-size: contain
+					position: absolute
+					bottom: 5px
+					left: 6%
+					z-index: -1
+				figure.icon
+					width: 76px
+					+dib
+				p
+					font-size: 60px
+					font-weight: bold
+					+dib
+			.title-intro
+				width: 540px
+				padding: 0 10px
+				p
+					font-size: 18px
+					line-height: 1.5
+					color: $purple
+		.main
+			width: 1000px
+			margin: 40px auto
+			+clearfix
+			.form
+				width: 590px
+				float: right
+				.row
+					font-size: 0
+					margin-bottom: 15px
+					label
+						width: 125px
+						line-height: 42px
+						font-size: 18px
+						color: #000
+						font-weight: bold
+						text-align: center
+						display: inline-block
+						vertical-align: top
+					input,textarea
+						width: calc(100% - 125px)
+						padding: 0 25px
+						font-size: 18px
+						height: 42px
+						// line-height: 42px
+						border: 1px solid #aaa
+						box-sizing: border-box
+						display: inline-block
+						vertical-align: top
+						&::placeholder
+							color: #aaa
+					select
+						width: 180px
+						height: 42px
+						padding: 0 25px
+						font-size: 18px
+						border: 1px solid #aaa
+						box-sizing: border-box
+						color: #aaa
+						display: inline-block
+						vertical-align: top
+						option
+					textarea
+						height: 130px
+						padding: 10px 25px
+						resize: none
+				input.submit-btn
+					width: 370px
+					height: 62px
+					margin-left: 125px
+					font-size: 24px
+					line-height: 62px
+					background-color: #fff
+					border: 1px solid #aaa
+					text-align: center
+					display: inline-block
+					cursor: pointer
+					transition: .3s
+					&:hover
+						background-color: #aaa
+						color: #fff
+			.contact-info
+				width: 335px
+				float: left
+				.gray-txt
+					font-size: 18px
+					line-height: 1.3
+					color: #888
+				.txt
+					font-size: 18px
+					line-height: 1.5
+					color: #000
+					font-weight: bold
+				.icon-box
+					font-size: 0
+					margin-top: 15px
+					a.icon
+						width: 70px
+						+dib
+						figure
+							img
+						& + a.icon
+							margin-left: 10px
+				.separate
+					width: 100%
+					margin: 15px 0
+					text-align: center
+					overflow: hidden
+					p
+						font-size: 25px
+						font-weight: bold
+						color: #ccc
+						display: inline-block
+						position: relative
+						&:before,&:after
+							content: ''
+							display: block
+							width: 100vw
+							height: 1px
+							background-color: #ccc
+							position: absolute
+							top: 0
+							bottom: 0
+							margin: auto
+						&:before
+							left: calc(-100vw - 25px)
+						&:after
+							right: calc(-100vw - 25px)
+				.qrcode-box
+					font-size: 0
+					.qrcode
+						width: 110px
+						margin-right: 20px
+						display: inline-block
+						vertical-align: top
+						figure
+							img
+						p
+							font-size: 16px
+							color: #000
+							font-weight: bold
+							text-align: center
+		
+
+section.map
+	iframe
+		width: 100%
+		height: 500px
