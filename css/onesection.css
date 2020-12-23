@@ -142,28 +142,42 @@ section.news .news-box .carousel-arrow.arrow-right {
   right: -40px;
 }
 section.news .title {
+  padding: 20px 0;
+  text-align: center;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 400px;
-  margin: auto;
-  padding-top: 20px;
+  z-index: 1;
+}
+section.news .title .main-title {
+  position: relative;
+  display: inline-block;
+}
+section.news .title .main-title:before {
+  content: "";
+  display: block;
+  width: 203px;
+  height: 89px;
+  background-image: url("../images/news_title_en.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: -22%;
+  z-index: -1;
+}
+section.news .title .main-title figure.icon {
+  width: 65px;
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
+  display: inline-block;
+  vertical-align: middle;
+}
+section.news .title .main-title p {
   font-size: 60px;
   font-weight: bold;
-  line-height: 1.2;
-  background-image: url(../images/news_title_en.png);
-  background-repeat: no-repeat;
-  background-position: 24px center;
-}
-section.news .title .icon {
-  width: 65px;
+  display: inline-block;
+  vertical-align: middle;
 }
 section.news .pic {
   position: relative;

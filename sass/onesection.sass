@@ -109,21 +109,34 @@ section.news
 			&.arrow-right
 				right: -40px
 	.title
+		padding: 20px 0
+		text-align: center
 		position: relative
-		display: flex
-		justify-content: flex-end
-		align-items: center
-		width: 400px
-		margin: auto
-		padding-top: 20px
-		font-size: 60px
-		font-weight: bold
-		line-height: 1.2
-		background-image: url(../images/news_title_en.png)
-		background-repeat: no-repeat
-		background-position: 24px center
-		.icon
-			width: 65px
+		z-index: 1
+		.main-title
+			position: relative
+			display: inline-block
+			&:before
+				content: ''
+				display: block
+				width: 203px
+				height: 89px
+				background-image: url('../images/news_title_en.png')
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: contain
+				position: absolute
+				bottom: 0
+				left: -22%
+				z-index: -1
+			figure.icon
+				width: 65px
+				transform: translateY(5px)
+				+dib
+			p
+				font-size: 60px
+				font-weight: bold
+				+dib
 	.pic
 		position: relative
 		&:before
