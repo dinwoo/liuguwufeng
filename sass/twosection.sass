@@ -5,7 +5,7 @@
 
 section.product
 	.wrapper
-		width: 1200px
+		max-width: 1200px
 		padding-top: 120px
 		margin: auto
 		.title
@@ -100,13 +100,121 @@ section.product
 						text-align: right
 						span.big
 							font-size: 34px
+	+rwd(1260px)
+		.wrapper
+			// padding-top: 120px
+			.title
+				// border-bottom: 1px solid #ccc
+				display: block
+				position: relative
+				margin-bottom: 60px
+				.main-title
+					width: 460px
+					margin: auto
+					// position: relative
+					// text-align: right
+					&:before
+						// width: 326px
+						// height: 89px
+						// bottom: 5px
+						// left: -5%
+					figure.icon
+						// width: 90px
+					p
+						// font-size: 60px
+				.title-intro
+					// width: 460px
+					// padding: 0 10px
+					position: absolute
+					right: 0
+					p
+						// font-size: 18px
+			.product-box
+				// width: calc(100% - 80px)
+				// padding: 35px 0
+				.carousel-arrow
+					// width: 30px
+					// height: 30px
+					.svg-box
+					&.arrow-left
+						// left: -40px
+					&.arrow-right
+						// right: -40px
+				.product-item
+					.pic
+						&:before
+							// height: 16px
+					.info
+						// padding-top: 15px
+						.name
+							// font-size: 24px
+							// padding-bottom: 10px
+						.txt
+							// font-size: 18px
+							// padding-bottom: 10px
+						.price
+							// font-size: 18px
+							span.big
+								// font-size: 34px
+	+rwd(640px)
+		.wrapper
+			// padding-top: 120px
+			.title
+				// border-bottom: 1px solid #ccc
+				margin-bottom: 30px
+				.main-title
+					width: 100%
+					margin: auto
+					text-align: center
+					&:before
+						width: 155px
+						height: 42px
+						// bottom: 5px
+						left: 2%
+					figure.icon
+						width: 50px
+					p
+						font-size: 30px
+				.title-intro
+					width: 100%
+					box-sizing: border-box
+					p
+						font-size: 12px
+			.product-box
+				// width: calc(100% - 80px)
+				padding: 15px 0
+				.carousel-arrow
+					width: 25px
+					height: 25px
+					.svg-box
+					&.arrow-left
+						left: -30px
+					&.arrow-right
+						right: -30px
+				.product-item
+					.pic
+						&:before
+							height: 8px
+					.info
+						// padding-top: 15px
+						.name
+							font-size: 18px
+							padding-bottom: 5px
+						.txt
+							font-size: 14px
+							padding-bottom: 5px
+						.price
+							font-size: 14px
+							span.big
+								font-size: 28px
 
 
 
 section.faq
 	background-color: $lightyellow
 	.wrapper
-		width: 840px
+		width: calc(100% - 30px)
+		max-width: 840px
 		padding: 60px 0
 		margin: auto
 		.title
@@ -222,7 +330,7 @@ section.faq
 
 section.contact
 	.wrapper
-		width: 1200px
+		max-width: 1200px
 		padding-top: 100px
 		margin: auto
 		.title
@@ -262,7 +370,7 @@ section.contact
 					line-height: 1.5
 					color: $purple
 		.main
-			width: 1000px
+			max-width: 1000px
 			margin: 40px auto
 			+clearfix
 			.form

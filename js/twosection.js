@@ -8,11 +8,17 @@
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
-      items: 3,
+      items: 1,
       nav: false,
       center: false,
       dots: true,
       responsive: {
+        420: {
+          items: 2,
+        },
+        768: {
+          items: 3,
+        },
       },
     })
     $('#product-left').click(function() {

@@ -40,6 +40,16 @@ html {
 .owl-dots .owl-dot:focus {
   outline: none;
 }
+@media only screen and (max-width: 768px) {
+  .owl-dots {
+    padding: 10px 0;
+  }
+  .owl-dots .owl-dot {
+    width: 30px;
+    height: 8px;
+    border-radius: 4px;
+  }
+}
 
 .carousel-arrow {
   width: 60px;
