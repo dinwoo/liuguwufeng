@@ -78,6 +78,8 @@ section.product .wrapper .product-box .carousel-arrow.arrow-right {
 }
 section.product .wrapper .product-box .product-item {
   width: 100%;
+  text-decoration: none;
+  color: #000;
 }
 section.product .wrapper .product-box .product-item .pic {
   width: 100%;
@@ -102,6 +104,7 @@ section.product .wrapper .product-box .product-item .pic:before {
 }
 section.product .wrapper .product-box .product-item .info {
   padding-top: 15px;
+  text-decoration: none;
 }
 section.product .wrapper .product-box .product-item .info .name {
   font-size: 24px;
