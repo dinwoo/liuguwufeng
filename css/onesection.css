@@ -21,12 +21,22 @@ section.banner .carousel-arrow.arrow-right {
 section.banner .owl-dots {
   position: absolute;
   left: 50%;
-  bottom: 70px;
+  bottom: 11%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 0;
   line-height: 0;
+}
+@media only screen and (max-width: 1440px) {
+  section.banner {
+    margin-top: 103px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  section.banner {
+    margin-top: 75.5px;
+  }
 }
 
 section.aboutus {
