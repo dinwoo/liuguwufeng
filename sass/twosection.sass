@@ -103,8 +103,9 @@ section.product
 						text-align: right
 						span.big
 							font-size: 34px
-	+rwd(1260px)
+	+rwd(1199px)
 		.wrapper
+			max-width: 840px
 			// padding-top: 120px
 			.title
 				// border-bottom: 1px solid #ccc
@@ -159,11 +160,13 @@ section.product
 							// font-size: 18px
 							span.big
 								// font-size: 34px
-	+rwd(640px)
+	+rwd(768px)
 		.wrapper
-			// padding-top: 120px
+			padding-top: 60px
 			.title
 				// border-bottom: 1px solid #ccc
+				max-width: 375px
+				margin: auto
 				margin-bottom: 30px
 				.main-title
 					width: 100%
@@ -284,6 +287,7 @@ section.faq
 					.faq-ques
 						width: 100%
 						padding: 10px 20px
+						font-size: 0
 						background-color: $brown
 						box-sizing: border-box
 						border-radius: 10px
@@ -303,8 +307,12 @@ section.faq
 							width: 43px
 							+dib
 						p
+							width: calc(100% - 43px)
+							padding: 0 5px
 							font-size: 24px
+							line-height: 1.2
 							font-weight: bold
+							box-sizing: border-box
 							+dib
 					.faq-ans
 						width: 100%
@@ -329,6 +337,57 @@ section.faq
 			border: 1px solid $brown
 			text-align: center
 			display: block
+	+rwd(768px)
+		.wrapper
+			// width: calc(100% - 30px)
+			// max-width: 840px
+			padding: 40px 0
+			.title
+				padding: 10px 0
+				.main-title
+					&:before
+						width: 63px
+						height: 50px
+						bottom: 0px
+						// right: -20%
+					figure.icon
+						width: 35px
+						transform: translateY(5px)
+					p
+						font-size: 30px
+			.tab-box
+				margin: 20px 0
+				.tab
+					width: 30%
+					font-size: 16px
+					line-height: 40px
+					// box-shadow: 0 2px 8px rgba(#060001,.2) inset
+					border-radius: 10px 10px 0 0
+					&.active
+			.faq-content
+				.faq-box
+					.faq-item
+						// margin: 10px 0
+						.faq-ques
+							padding: 5px 10px
+							border-radius: 5px
+							&:before
+								width: 10px
+							figure.icon
+								width: 20px
+							p
+								width: calc(100% - 20px)
+								font-size: 14px
+						.faq-ans
+							padding: 5px 25px
+							border: 1px solid $brown
+							p
+								font-size: 12px
+			a.more-btn
+				width: 90%
+				margin: 20px auto 0
+				font-size: 16px
+				line-height: 20vw
 
 
 section.contact
@@ -494,6 +553,182 @@ section.contact
 							color: #000
 							font-weight: bold
 							text-align: center
+	+rwd(1199px)
+		.wrapper
+			// max-width: 840px
+			// padding-top: 100px
+			.title
+				display: block
+				position: relative
+				margin-bottom: 60px
+				.main-title
+					// width: 270px
+					margin: auto
+					&:before
+						// width: 187px
+						// height: 45px
+						// bottom: 5px
+						// left: 6%
+					figure.icon
+						// width: 38px
+					p
+						// font-size: 30px
+				.title-intro
+					// width: 540px
+					// padding: 0 10px
+					position: absolute
+					right: 0
+					p
+						// font-size: 18px
+			.main
+				// max-width: 1000px
+				// margin: 40px auto
+				.form
+					// width: 590px
+					float: none
+					margin: 20px auto
+					.row
+						// margin-bottom: 15px
+						label
+							// width: 125px
+							// line-height: 42px
+							// font-size: 18px
+						input,textarea
+							// width: calc(100% - 125px)
+							// padding: 0 25px
+							// font-size: 18px
+							// height: 42px
+						select
+							// width: 180px
+							// height: 42px
+							// padding: 0 25px
+							// font-size: 18px
+							option
+						textarea
+							// height: 130px
+							// padding: 10px 25px
+					input.submit-btn
+						// width: 370px
+						// height: 62px
+						// margin-left: 125px
+						// font-size: 24px
+						// line-height: 62px
+				.contact-info
+					// width: 335px
+					float: none
+					margin: 20px auto
+					.gray-txt
+						// font-size: 18px
+					.txt
+						// font-size: 18px
+					.icon-box
+						// margin-top: 15px
+						a.icon
+							// width: 70px
+							& + a.icon
+								// margin-left: 10px
+					.separate
+						// margin: 15px 0
+						p
+							// font-size: 25px
+							&:before,&:after
+								// width: 100vw
+								// height: 1px
+							&:before
+								// left: calc(-100vw - 25px)
+							&:after
+								// right: calc(-100vw - 25px)
+					.qrcode-box
+						.qrcode
+							// width: 110px
+							// margin-right: 20px
+							p
+								// font-size: 16px
+	+rwd(768px)
+		.wrapper
+			max-width: 840px
+			// padding-top: 100px
+			.title
+				max-width: 375px
+				margin: auto
+				margin-bottom: 60px
+				.main-title
+					width: 270px
+					&:before
+						width: 187px
+						height: 45px
+						// bottom: 5px
+						// left: 6%
+					figure.icon
+						width: 38px
+					p
+						font-size: 30px
+				.title-intro
+					width: 100%
+					box-sizing: border-box
+					p
+						font-size: 12px
+			.main
+				max-width: 375px
+				padding: 0 15px
+				box-sizing: border-box
+				// margin: 40px auto
+				.form
+					width: 100%
+					.row
+						width: 100%
+						// margin-bottom: 15px
+						label
+							width: 70px
+							line-height: 36px
+							font-size: 14px
+						input,textarea
+							width: calc(100% - 70px)
+							padding: 0 15px
+							font-size: 14px
+							height: 36px
+						select
+							width: calc(100% - 70px)
+							height: 36px
+							padding: 0 15px
+							font-size: 14px
+							option
+						textarea
+							height: 80px
+							padding: 5px 15px
+					input.submit-btn
+						width: calc(100% - 70px)
+						height: 50px
+						margin-left: 70px
+						font-size: 18px
+						line-height: 50px
+				.contact-info
+					width: 100%
+					.gray-txt
+						font-size: 14px
+					.txt
+						font-size: 14px
+					.icon-box
+						margin-top: 10px
+						a.icon
+							width: 50px
+							& + a.icon
+								// margin-left: 10px
+					.separate
+						margin: 10px 0
+						p
+							font-size: 20px
+							&:before,&:after
+							&:before
+								left: calc(-100vw - 10px)
+							&:after
+								right: calc(-100vw - 10px)
+					.qrcode-box
+						.qrcode
+							width: 90px
+							// margin-right: 20px
+							p
+								font-size: 12px
 		
 
 section.map

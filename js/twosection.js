@@ -13,12 +13,13 @@
       center: false,
       dots: true,
       responsive: {
-        420: {
-          items: 2,
-        },
-        768: {
-          items: 3,
-        },
+				420: {
+					items: 2,
+				},
+				1200: {
+					margin: 40,
+					items: 3,
+				},
       },
     })
     $('#product-left').click(function() {
