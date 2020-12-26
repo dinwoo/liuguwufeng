@@ -1,25 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600,700,900");
 * {
-  font-family: 'Noto Sans TC','Noto Serif TC', sans-serif; }
+  font-family: "Noto Sans TC", "Noto Serif TC", sans-serif;
+}
 
 footer {
-  background-color: #8f5b94; }
-  footer .wrapper {
-    max-width: 1200px;
-    margin: auto; }
-    footer .wrapper:after {
-      content: '';
-      display: block;
-      clear: both; }
-    footer .wrapper .copyright {
-      font-size: 16px;
-      line-height: 50px;
-      color: #fff;
-      float: left; }
-    footer .wrapper .design {
-      font-size: 16px;
-      line-height: 50px;
-      color: #fff;
-      opacity: .5;
-      float: right; }
+  background-color: #8f5b94;
+}
+footer .wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: auto;
+}
+footer .wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+footer .wrapper .copyright {
+  padding: 16px 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+  float: left;
+}
+footer .wrapper .design {
+  padding: 16px 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+  opacity: 0.5;
+  float: right;
+}
