@@ -215,6 +215,11 @@ section.news .wrapper {
     max-width: 840px;
   }
 }
+@media only screen and (max-width: 768px) {
+  section.news .wrapper {
+    max-width: 640px;
+  }
+}
 section.news .news-box {
   position: relative;
   width: calc(100% - 80px);
@@ -251,8 +256,8 @@ section.news .title .main-title {
 section.news .title .main-title:before {
   content: "";
   display: block;
-  width: 203px;
-  height: 89px;
+  width: 205px;
+  height: 95px;
   background-image: url("../images/news_title_en.png");
   background-repeat: no-repeat;
   background-position: center center;
