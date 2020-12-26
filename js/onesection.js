@@ -3,16 +3,23 @@
 	$(document).ready(function() {
 		newsOwl = $('#news-carousel').owlCarousel({
 			loop: false,
-			margin: 40,
+			margin: 20,
 			responsiveClass: true,
 			autoplay: true,
 			autoplayTimeout: 5000,
 			autoplayHoverPause: true,
-			items: 3,
+			items: 1,
 			nav: false,
 			center: false,
 			dots: true,
 			responsive: {
+				420: {
+					items: 2,
+				},
+				1200: {
+					margin: 40,
+					items: 3,
+				},
 			},
 		})
 		$('#news-left').click(function() {
@@ -52,36 +59,42 @@
 			$('html, body').animate({
 				scrollTop: $('section.aboutus').offset().top-150
 			}, 500);
+			$('.header').removeClass('active');
 		});
 		$('#news').click(function (e) { 
 			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $('section.news').offset().top-113
 			}, 500);
+			$('.header').removeClass('active');
 		});
 		$('#product').click(function (e) { 
 			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $('section.product').offset().top-113
 			}, 500);
+			$('.header').removeClass('active');
 		});
 		$('#faq').click(function (e) { 
 			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $('section.faq').offset().top-113
 			}, 500);
+			$('.header').removeClass('active');
 		});
 		$('#contact').click(function (e) { 
 			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $('section.contact').offset().top-113
 			}, 500);
+			$('.header').removeClass('active');
 		});
 		$('#index').click(function (e) { 
 			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: 0
 			}, 500);
+			$('.header').removeClass('active');
 		});
 	});
 })($);

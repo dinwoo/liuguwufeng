@@ -144,6 +144,8 @@ section.news
 		max-width: 1240px
 		margin: auto
 		padding: 0 20px
+		+rwd(1199px)
+			max-width: 840px
 	.news-box
 		position: relative
 		width: calc(100% - 80px)
@@ -156,14 +158,18 @@ section.news
 				left: -40px
 			&.arrow-right
 				right: -40px
+		+rwd(768px)
+			width: calc(100% - 60px)
+			margin-top: 24px
 	.title
-		padding: 20px 0
+		padding: 20px 0 5px
 		text-align: center
 		position: relative
 		z-index: 1
 		.main-title
 			position: relative
 			display: inline-block
+			padding-left: 57px
 			&:before
 				content: ''
 				display: block
@@ -175,7 +181,7 @@ section.news
 				background-size: contain
 				position: absolute
 				bottom: 0
-				left: -22%
+				left: 0
 				z-index: -1
 			figure.icon
 				width: 65px
@@ -185,6 +191,16 @@ section.news
 				font-size: 60px
 				font-weight: bold
 				+dib
+		+rwd(768px)
+			.main-title
+				padding-left: 44px
+				&:before
+					width: 125px
+					height: 58px
+				figure.icon
+					width: 35px
+				p
+					font-size: 32px
 	.pic
 		position: relative
 		&:before
@@ -197,6 +213,9 @@ section.news
 			height: 16px
 			background-color: $yellow
 			opacity: 0.75
+		+rwd(768px)
+			&:before
+				height: 8px
 	.info
 		margin-top: 20px
 		font-size: 20px
@@ -215,3 +234,9 @@ section.news
 			a
 				color: #000
 				text-decoration: none
+		+rwd(768px)
+			font-size: 16px
+			.txt
+				margin-top: 8px
+			.more
+				margin-top: 8px
