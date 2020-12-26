@@ -21,7 +21,7 @@ section.banner .carousel-arrow.arrow-right {
 section.banner .owl-dots {
   position: absolute;
   left: 50%;
-  bottom: 11%;
+  bottom: 70px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -32,10 +32,19 @@ section.banner .owl-dots {
   section.banner {
     margin-top: 103px;
   }
+  section.banner .owl-dots {
+    bottom: 50px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   section.banner {
     margin-top: 75.5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.banner .owl-dots {
+    width: 100%;
+    bottom: 15%;
   }
 }
 
@@ -51,6 +60,17 @@ section.aboutus .wrapper {
   max-width: 1240px;
   margin: auto;
   padding: 0 40px;
+}
+@media only screen and (max-width: 1199px) {
+  section.aboutus .wrapper {
+    max-width: 640px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.aboutus .wrapper {
+    max-width: 440px;
+    padding: 0 30px;
+  }
 }
 section.aboutus .about {
   position: relative;
@@ -95,6 +115,27 @@ section.aboutus .about-text {
   font-size: 18px;
   line-height: 1.8;
 }
+@media only screen and (max-width: 1199px) {
+  section.aboutus .about-main {
+    display: block;
+  }
+  section.aboutus .about-content {
+    margin-top: 24px;
+  }
+  section.aboutus .about-text {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.aboutus .about-bg {
+    top: -15px;
+    left: -15px;
+    width: calc(100% + 30px);
+  }
+  section.aboutus .about-text {
+    font-size: 14px;
+  }
+}
 section.aboutus .title {
   position: relative;
   padding-top: 50px;
@@ -107,6 +148,21 @@ section.aboutus .title {
   background-image: url(../images/aboutUs-title.png);
   background-repeat: no-repeat;
   background-position: 24px center;
+}
+@media only screen and (max-width: 1199px) {
+  section.aboutus .title {
+    background-position: center left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.aboutus .title {
+    padding-top: 20px;
+    padding-bottom: 4px;
+    font-size: 32px;
+    border-bottom: 2px solid #efcc2a;
+    background-position: top left;
+    background-size: 186px;
+  }
 }
 section.aboutus .btn {
   position: relative;
@@ -121,6 +177,25 @@ section.aboutus .btn {
   text-align: center;
   text-decoration: none;
   border: 1px solid #676767;
+}
+@media only screen and (max-width: 1199px) {
+  section.aboutus .btn {
+    width: 100%;
+    max-width: 440px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.aboutus .btn {
+    max-width: 340px;
+    margin: 35px auto 0 auto;
+    padding: 20px 15px;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  section.aboutus .btn {
+    font-size: 16px;
+  }
 }
 
 section.news {

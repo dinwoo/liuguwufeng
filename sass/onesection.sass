@@ -13,14 +13,20 @@ section.banner
 	.owl-dots
 		position: absolute
 		left: 50%
-		bottom: 11%
+		bottom: 70px
 		transform: translateX(-50%)
 		padding: 0
 		line-height: 0
 	+rwd(1440px)
 		margin-top: 103px
+		.owl-dots
+			bottom: 50px
 	+rwd(1199px)
 		margin-top: 75.5px
+	+rwd(768px)
+		.owl-dots
+			width: 100%
+			bottom: 15%
 
 section.aboutus
 	position: relative
@@ -32,6 +38,11 @@ section.aboutus
 		max-width: 1240px
 		margin: auto
 		padding: 0 40px
+		+rwd(1199px)
+			max-width: 640px
+		+rwd(768px)
+			max-width: 440px
+			padding: 0 30px
 
 	.about
 		position: relative
@@ -64,6 +75,20 @@ section.aboutus
 			margin-left: 30px
 			font-size: 18px
 			line-height: 1.8
+		+rwd(1199px)
+			&-main
+				display: block
+			&-content
+				margin-top: 24px
+			&-text
+				margin-left: 0
+		+rwd(768px)
+			&-bg
+				top: -15px
+				left: -15px
+				width: calc(100% + 30px)
+			&-text
+				font-size: 14px
 
 	.title
 		position: relative
@@ -77,6 +102,15 @@ section.aboutus
 		background-image: url(../images/aboutUs-title.png)
 		background-repeat: no-repeat
 		background-position: 24px center
+		+rwd(1199px)
+			background-position: center left
+		+rwd(768px)
+			padding-top: 20px
+			padding-bottom: 4px
+			font-size: 32px
+			border-bottom: 2px solid #efcc2a
+			background-position: top left
+			background-size: 186px
 
 	.btn
 		position: relative
@@ -90,6 +124,16 @@ section.aboutus
 		text-align: center
 		text-decoration: none
 		border: 1px solid #676767
+		+rwd(1199px)
+			width: 100%
+			max-width: 440px
+		+rwd(768px)
+			max-width: 340px
+			margin: 35px auto 0 auto
+			padding: 20px 15px
+			font-size: 18px
+		+rwd(320px)
+			font-size: 16px
 
 section.news
 	background-color: $lightyellow

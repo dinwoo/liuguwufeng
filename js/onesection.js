@@ -43,6 +43,10 @@
 			bannerOwl.trigger('next.owl.carousel');
 		})
 
+		$('.header-burger').click(function (e) { 
+			e.preventDefault();
+			$('.header').toggleClass('active');
+		});
 		$('#aboutus').click(function (e) { 
 			e.preventDefault();
 			$('html, body').animate({
