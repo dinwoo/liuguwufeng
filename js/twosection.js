@@ -21,6 +21,9 @@
 					items: 3,
 				},
       },
+      onTranslated: function(event) {
+        $('.mask').hide()
+      }
     })
     $('#product-left').click(function() {
       productOwl.trigger('prev.owl.carousel');
@@ -39,6 +42,18 @@
     $('.faq-ques').on('click',function() {
       $('.faq-ans').slideUp()
       $(this).next().slideDown()
+    })
+
+    $('.product-item').on('click',function() {
+      var ww = window.innerWidth;
+      if(ww<=768){
+        $('.mask').hide()
+        $(this).find('.mask').show()
+      }
+    })
+    $('.product-item .mask .close').on('click',function(e) {
+      e.stopPropagation();
+      $(this).parents('.mask').hide();
     })
   });
 })($);
