@@ -33,7 +33,7 @@
 			loop: false,
 			// margin: 40,
 			responsiveClass: true,
-			autoplay: true,
+			// autoplay: true,
 			autoplayTimeout: 5000,
 			autoplayHoverPause: true,
 			items: 1,

@@ -2,6 +2,7 @@
 
 section.banner
 	position: relative
+	height: 31.2vw
 	margin-top: 113px
 	.carousel-arrow
 		width: 30px
@@ -17,6 +18,20 @@ section.banner
 		transform: translateX(-50%)
 		padding: 0
 		line-height: 0
+	.owl-carousel,
+	.owl-stage-outer,
+	.owl-stage,
+	.owl-item
+		height: 100%
+	.banner-item
+		display: block
+		height: 100%
+	.iframe-box
+		width: 100%
+		height: 100%
+	iframe
+		width: 100%
+		height: 100%
 	+rwd(1440px)
 		margin-top: 103px
 		.owl-dots
@@ -163,6 +178,10 @@ section.news
 		+rwd(768px)
 			width: calc(100% - 60px)
 			margin-top: 24px
+	.news-item
+		display: block
+		color: #000
+		text-decoration: none
 	.title
 		padding: 20px 0 5px
 		text-align: center
@@ -171,11 +190,11 @@ section.news
 		.main-title
 			position: relative
 			display: inline-block
-			padding-left: 57px
+			// padding-left: 57px
 			&:before
 				content: ''
 				display: block
-				width: 205px
+				width: 439px
 				height: 95px
 				background-image: url('../images/news_title_en.png')
 				background-repeat: no-repeat
@@ -183,7 +202,7 @@ section.news
 				background-size: contain
 				position: absolute
 				bottom: 0
-				left: 0
+				left: -174px
 				z-index: -1
 			figure.icon
 				width: 65px
@@ -195,10 +214,11 @@ section.news
 				+dib
 		+rwd(768px)
 			.main-title
-				padding-left: 44px
+				// padding-left: 44px
 				&:before
-					width: 125px
+					width: 210px
 					height: 58px
+					left: -68px
 				figure.icon
 					width: 35px
 				p
@@ -233,9 +253,6 @@ section.news
 			margin-top: 12px
 			font-weight: bold
 			text-align: right
-			a
-				color: #000
-				text-decoration: none
 		+rwd(768px)
 			font-size: 16px
 			.txt
