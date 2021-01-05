@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+html(lang="zh-tw")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title 霧峰六股社區
+		link(rel="stylesheet", href="./css/css_reset.css")
+		link(rel="stylesheet", href="./css/owl.carousel.min.css")
+		link(rel="stylesheet", href="./css/owl.theme.default.min.css")
+		link(rel="stylesheet", href="./css/index.css")
+		link(rel="stylesheet", href="./css/news.css")
+		link(rel="stylesheet", href="./css/header.css")
+		link(rel="stylesheet", href="./css/footer.css")
+		link(rel='icon', type='image/x-icon', href='./images/favicon.ico')
+	body
+		include ../component/Header.pug
+		section.news-content
+			.wrapper
+				.title 品牌，源自個性忠於需求
+				.date 2020/11/05
+				.content
+					.img
+						img(src="./images/news-content.png", alt="")
+					.txt
+						| 從有消費記憶開始，我們就置身在一個大型品牌市場當中，去感受每一個企業所帶來的使用體驗，從飲食、服裝、交通、居住，舉凡需要用到交易的物件，就會進行各種價值觀的爭奪來取得結果，就價值來說可以分為有形跟無形的。
+						br
+						br
+						br
+						| 而品牌在企業當中就是著重在無形的價值塑造，增加消費者有感的購買動機。在我們生活當中解決各種民生需求的實體，就屬便利商店為主。
+						br
+						br
+						| 今天想要分享，就是在日本展店量僅次於7-11的Lawson如何發揮線上與線下的O2O經營魅力。
+						br
+						br
+						| 首先Lawson的商標採用鮮明的兩色單元設計，這裡我們從互聯網的應用角度來看首頁，從中間廣告選單來看，根據消費者的需求習慣，是針對活動產品與優惠資訊為主。
+						br
+						br
+						| 傳統的文字訊息在商業網站上的表現是有限的效果，在互聯網的瀏覽文化上，更是容易被區分受歡迎與不受歡迎的方式；因此，LAWSON在捲軸中央的視覺，從大量的消費數據統計，將使用者的習慣與需求更加直覺化，採用鮮明的圖示設計強化訊息傳達，這是Lawson重視消費體驗所綜合出來的商業設計。
+		section.news-nav
+			.wrapper
+				.nav
+					a.nav-item(href="#") ← 上一則
+					a.nav-item.fbShare(href="#") Facebook 分享
+					a.nav-item(href="#") 下一則 →
+
+		include ../component/Footer.pug
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+		script(src="./js/libs/owl.carousel.min.js")
+		script(src="./js/common.js")

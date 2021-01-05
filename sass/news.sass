@@ -1,0 +1,54 @@
+@import "var.sass"
+
+section.news-content,
+section.news-nav
+	.wrapper
+		box-sizing: border-box
+		max-width: 1240px
+		margin: auto
+		padding: 0 20px
+
+section.news-content
+	margin-top: 113px
+	padding: 120px 0
+	.title
+		text-align: center
+		font-size: 60px
+		font-weight: bold
+		padding-bottom: 30px
+		border-bottom: 1px solid #ccc
+	.date
+		font-size: 20px
+		text-align: right
+		margin-top: 20px
+	.content
+		max-width: 800px
+		margin: 70px auto 0 auto
+		.txt
+			margin-top: 50px
+			font-size: 18px
+			line-height: 1.5
+
+section.news-nav
+	background-color: $lightyellow
+	.nav
+		height: 150px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-item
+			font-size: 24px
+			color: #000
+			text-decoration: none
+		.fbShare
+			align-self: flex-start
+			width: 100%
+			max-width: 432px
+			margin: 0 auto 0 auto
+			padding: 26px
+			text-align: center
+			text-decoration: none
+			border: 1px solid #c5bfb2
+			background-color: #fff
+			transform: translateY(-50%)
+
