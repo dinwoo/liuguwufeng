@@ -8,9 +8,9 @@ section.news-content .wrapper,
 section.news-nav .wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 section.news-content {
@@ -38,6 +38,30 @@ section.news-content .content .txt {
   font-size: 18px;
   line-height: 1.5;
 }
+@media only screen and (max-width: 1199px) {
+  section.news-content {
+    margin-top: 75.5px;
+    padding: 100px 0;
+  }
+  section.news-content .content {
+    margin: 50px auto 0 auto;
+  }
+  section.news-content .content .txt {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.news-content .title {
+    font-size: 32px;
+    padding-bottom: 15px;
+  }
+  section.news-content .date {
+    margin-top: 10px;
+  }
+  section.news-content .content {
+    max-width: 600px;
+  }
+}
 
 section.news-nav {
   background-color: rgba(222, 216, 201, 0.5);
@@ -55,22 +79,55 @@ section.news-nav .nav {
           align-items: center;
 }
 section.news-nav .nav-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+section.news-nav .nav-item a {
+  display: block;
   font-size: 24px;
   color: #000;
   text-decoration: none;
 }
-section.news-nav .nav .fbShare {
+section.news-nav .nav-item.btn {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  width: 100%;
-  max-width: 432px;
-  margin: 0 auto 0 auto;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+section.news-nav .nav .fbShare {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 430px;
   padding: 26px;
   text-align: center;
   text-decoration: none;
   border: 1px solid #c5bfb2;
   background-color: #fff;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+}
+@media only screen and (max-width: 768px) {
+  section.news-nav .wrapper {
+    padding: 0 20px;
+  }
+  section.news-nav .nav {
+    position: relative;
+  }
+  section.news-nav .nav-item a {
+    font-size: 18px;
+  }
+  section.news-nav .nav-item.btn {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 330px;
+  }
+  section.news-nav .nav .fbShare {
+    width: 100%;
+    padding: 22px 15px;
+  }
 }

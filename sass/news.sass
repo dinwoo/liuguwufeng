@@ -4,9 +4,9 @@ section.news-content,
 section.news-nav
 	.wrapper
 		box-sizing: border-box
-		max-width: 1240px
+		max-width: 1200px
 		margin: auto
-		padding: 0 20px
+		padding: 0 40px
 
 section.news-content
 	margin-top: 113px
@@ -28,6 +28,21 @@ section.news-content
 			margin-top: 50px
 			font-size: 18px
 			line-height: 1.5
+	+rwd(1199px)
+		margin-top: 75.5px
+		padding: 100px 0
+		.content
+			margin: 50px auto 0 auto
+			.txt
+				margin-top: 30px
+	+rwd(768px)
+		.title
+			font-size: 32px
+			padding-bottom: 15px
+		.date
+			margin-top: 10px
+		.content
+			max-width: 600px
 
 section.news-nav
 	background-color: $lightyellow
@@ -37,18 +52,39 @@ section.news-nav
 		justify-content: space-between
 		align-items: center
 		&-item
-			font-size: 24px
-			color: #000
-			text-decoration: none
+			flex: 0 0 auto
+			a
+				display: block
+				font-size: 24px
+				color: #000
+				text-decoration: none
+			&.btn
+				align-self: flex-start
+				transform: translateY(-50%)
 		.fbShare
-			align-self: flex-start
-			width: 100%
-			max-width: 432px
-			margin: 0 auto 0 auto
+			box-sizing: border-box
+			width: 430px
 			padding: 26px
 			text-align: center
 			text-decoration: none
 			border: 1px solid #c5bfb2
 			background-color: #fff
-			transform: translateY(-50%)
+	+rwd(768px)
+		.wrapper
+			padding: 0 20px
+		.nav
+			position: relative
+			&-item
+				a
+					font-size: 18px
+				&.btn
+					position: absolute
+					top: 0
+					left: 50%
+					transform: translate(-50%, -50%)
+					width: 100%
+					max-width: 330px
+			.fbShare
+				width: 100%
+				padding: 22px 15px
 

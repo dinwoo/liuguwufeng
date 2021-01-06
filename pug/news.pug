@@ -39,9 +39,12 @@ html(lang="zh-tw")
 		section.news-nav
 			.wrapper
 				.nav
-					a.nav-item(href="#") ← 上一則
-					a.nav-item.fbShare(href="#") Facebook 分享
-					a.nav-item(href="#") 下一則 →
+					.nav-item
+						a.arrowLink(href="#") ← 上一則
+					.nav-item.btn
+						a.fbShare(href="#") Facebook 分享
+					.nav-item
+						a.arrowLink(href="#") 下一則 →
 
 		include ../component/Footer.pug
 
