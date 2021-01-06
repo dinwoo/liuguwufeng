@@ -12,6 +12,12 @@ section.news-nav .wrapper {
   margin: auto;
   padding: 0 40px;
 }
+@media only screen and (max-width: 768px) {
+  section.news-content .wrapper,
+section.news-nav .wrapper {
+    padding: 0 20px;
+  }
+}
 
 section.news-content {
   margin-top: 113px;
@@ -19,7 +25,7 @@ section.news-content {
 }
 section.news-content .title {
   text-align: center;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: bold;
   padding-bottom: 30px;
   border-bottom: 1px solid #ccc;
@@ -41,7 +47,7 @@ section.news-content .content .txt {
 @media only screen and (max-width: 1199px) {
   section.news-content {
     margin-top: 75.5px;
-    padding: 100px 0;
+    padding: 80px 0 100px;
   }
   section.news-content .content {
     margin: 50px auto 0 auto;
@@ -52,14 +58,18 @@ section.news-content .content .txt {
 }
 @media only screen and (max-width: 768px) {
   section.news-content .title {
-    font-size: 32px;
+    font-size: 30px;
     padding-bottom: 15px;
   }
   section.news-content .date {
     margin-top: 10px;
+    font-size: 16px;
   }
   section.news-content .content {
     max-width: 600px;
+  }
+  section.news-content .content .txt {
+    font-size: 16px;
   }
 }
 
@@ -107,9 +117,6 @@ section.news-nav .nav .fbShare {
   background-color: #fff;
 }
 @media only screen and (max-width: 768px) {
-  section.news-nav .wrapper {
-    padding: 0 20px;
-  }
   section.news-nav .nav {
     position: relative;
   }
