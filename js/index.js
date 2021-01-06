@@ -148,7 +148,10 @@
 				},
 			},
 			onTranslated: function(event) {
-				$('.mask').hide()
+				var ww = window.innerWidth;
+				if(ww<=768){
+					$('.mask').hide()
+				}	
 			}
 		})
 		$('#product-left').click(function() {
