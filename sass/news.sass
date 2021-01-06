@@ -63,9 +63,20 @@ section.news-nav
 				font-size: 24px
 				color: #000
 				text-decoration: none
+				transition: .3s
+				
 			&.btn
 				align-self: flex-start
 				transform: translateY(-50%)
+			+rwd2(1025px)
+				a
+					&.prev:hover
+						transform: translateX(-15px)
+					&.next:hover
+						transform: translateX(15px)
+					&.fbShare:hover
+						color: #fff
+						background-color: #3b5998
 		.fbShare
 			box-sizing: border-box
 			width: 430px
